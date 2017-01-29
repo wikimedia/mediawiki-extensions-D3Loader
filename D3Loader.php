@@ -34,9 +34,11 @@ $wgExtensionCredits['validextensionclass'][] = array(
 	'name' => 'D3Loader',
 	'author' => 'Leonid Verhovskij',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:D3Loader',
-	'description' => 'This Extension simply load D3.js to make it available for other extensions',
+	'descriptionmsg' => 'd3loader-desc',
 	'version' => 1.0
 );
+
+$wgMessagesDirs['D3Loader'] = __DIR__ . '/i18n';
 
 $myResourceTemplate = array(
 	'localBasePath' => __DIR__ . '/resources',
