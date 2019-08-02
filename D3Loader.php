@@ -53,7 +53,7 @@ $wgResourceModules['ext.d3'] = $myResourceTemplate + array(
 );
 
 $wgHooks["BeforePageDisplay"][] = function( OutputPage $out ) {
-	$out->addModuleScripts('ext.d3');
+	$out->addModules('ext.d3');
 	return true;
 };
 
